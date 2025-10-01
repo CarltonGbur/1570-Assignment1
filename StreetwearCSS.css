@@ -1,0 +1,206 @@
+:root {
+  --bg: #ffffff;          
+  --text: #111111;       
+  --muted: #6b7280;
+  --brand: #0b1f44;       
+  --brand-2: #123a6f;    
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --link: #0ea5e9;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.6;
+}
+
+body.dark { background: #0b1220; color: #e5e7eb; }
+body.dark a { color: #93c5fd; }
+
+.container {
+  width: min(100%, 1000px);
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--brand);        
+  color: #ffffff;                  
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 8px 20px -20px rgba(0,0,0,.35);
+}
+
+.site-header h1 {
+  margin: 0.25rem 0 0;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  letter-spacing: 0.5px;
+  color: #ffffff;                
+}
+
+.tagline {
+  margin: 0.25rem 0 0.75rem;
+  color: #e5e7eb;                
+  font-style: italic;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.site-nav a {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+  color: #ffffff;                               
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 999px;
+  transition: transform 150ms ease, background 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+.site-nav a:hover {
+  background: var(--brand-2);                      
+  color: #ffffff;
+  border-color: rgba(255,255,255,0.35);
+  transform: translateY(-1px);
+}
+
+.site-nav a:active { transform: translateY(0); filter: brightness(0.95); }
+
+.site-nav a:visited { color: #ffffff; }
+
+.site-nav a.active {
+  background: #ffffff;
+  color: var(--brand);
+  border-color: #ffffff;
+}
+
+main h2, main h3 {
+  margin-top: 1rem;
+  letter-spacing: .3px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 0.75rem;
+  box-shadow: 0 6px 30px -24px rgba(0,0,0,.4);
+  margin: 1rem auto;
+  text-align: center;                
+  max-width: 900px;
+}
+
+.card img, img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0.25rem auto 0.75rem;      
+  border-radius: 12px;
+}
+
+img.zoomed {
+  transform: scale(1.06);
+  transition: transform 200ms ease;
+}
+
+main p, main h2, main h3 { text-align: center; margin-left: auto; margin-right: auto; }
+
+.table-wrap { overflow-x: auto; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 auto;                    
+}
+
+caption {
+  caption-side: top;
+  text-align: center;               
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+
+thead th {
+  background: #f3f4f6;
+  text-align: left;                
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+tbody td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border);
+  text-align: left;                
+}
+
+tbody tr:nth-child(even) { background: #fafafa; }
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover { text-decoration-thickness: 2px; }
+
+
+.site-header a { color: #ffffff; text-decoration: none; }
+.site-header a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+.site-footer {
+  margin-top: 2rem;
+  background: var(--card);
+  border-top: 1px solid var(--border);
+}
+
+.site-footer p {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1rem;
+  justify-content: center;
+}
+
+.theme-toggle {
+  margin-top: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.35); 
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.theme-toggle:hover { border-color: #ffffff; }

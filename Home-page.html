@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streetwear Favorites — Home</title>
+  <link rel="stylesheet" href="StreetwearCSS.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Streetwear Favorites</h1>
+      <p class="tagline">Cole Henry • Creations by Dav • Scuffers • Burberry</p>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a class="active" href="Home-page.html">Home</a></li>
+          <li><a href="Cole-Henry.html">Cole Henry</a></li>
+          <li><a href="Creations-by-Dav.html">Creations by Dav</a></li>
+          <li><a href="Scuffers.html">Scuffers</a></li>
+          <li><a href="Burberry.html">Burberry</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <article>
+      <header><h2>Welcome</h2></header>
+      <section>
+        <p>This site is a quick hub for a few of my favorite fashion labels. I have been into fashion and thrifting for some time now and always love to showcase my my love of fashion through my outfits, but it is always fun to do it for school too! I Started off thrifting in Highschool, but have since expanded to many different mediums of shopping for clothes. I shop on online reselling websites for more expensive and sought after items because i will typically buy them second hand. FOr my normal day to day clothes i usually just thrift at different stores around Pittsburgh. My favorite store to shop at in Pittsburgh is a vintage store called Monarch Studios. I have become good friends with teh owner, Sean, and he always has some great stuff in his collection .</p>
+        <ul>
+          <li>Each Page will provide an picture of the clothing and a brief background on that designer</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Compare at a Glance</h3>
+        <div class="filters">
+          <label for="priceFilter">Filter by price tier:</label>
+          <select id="priceFilter">
+            <option value="all">All</option>
+            <option value="accessible">Accessible</option>
+            <option value="premium">Premium</option>
+            <option value="luxury">Luxury</option>
+          </select>
+        </div>
+
+        <div class="table-wrap">
+          <table id="brandTable">
+            <caption>Quick Breakdown</caption>
+            <thead>
+              <tr>
+                <th>Brand</th>
+                <th>Origin</th>
+                <th>Style Notes</th>
+                <th>Price Tier</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-tier="premium">
+                <td><a href="Cole-Henry.html">Cole Henry</a></td>
+                <td>US</td>
+                <td>Minimal, clean silhouettes</td>
+                <td>Premium</td>
+              </tr>
+              <tr data-tier="premium">
+                <td><a href="Creations-by-Dav.html">Creations by Dav</a></td>
+                <td>US</td>
+                <td>Art-forward denim</td>
+                <td>Premium</td>
+              </tr>
+              <tr data-tier="accessible">
+                <td><a href="Scuffers.html">Scuffers</a></td>
+                <td>US</td>
+                <td>Skate-influenced</td>
+                <td>Accessible</td>
+              </tr>
+              <tr data-tier="luxury">
+                <td><a href="Burberry.html">Burberry</a></td>
+                <td>UK</td>
+                <td>Histroic and Luxorious</td>
+                <td>Luxury</td>
+              </tr>
+            
+            </tbody>
+          </table>
+        </div>
+    </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Favorite Designers • Carlton Gbur</p>
+    </div>
+  </footer>
+
+  <script src="streetwearjavaScript.js"></script>
+</body>
+</html>
