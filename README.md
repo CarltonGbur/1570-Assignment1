@@ -5,3 +5,8 @@ The four brand pages, Cole Henry, Creations by Dav, Scuffers, and Burberry, feat
 <header>, <nav>, <main>, and and <footer>, plus normal headings/paragraphs and <figure>/<img> to bundle visuals. The home table uses proper structure (<caption>, <thead>, <tbody>, th, td) so it’s readable and screen-reader friendly.
 Visually, everything is unified by a navy header with white lettering, a centered content column, responsive centered images, pill-style nav links with hover/active/visited states, comfy system-UI typography, and zebra-striped tables. 
 I made the header sticky so navigation stays put. JavaScript adds a one-click theme toggle (it flips a dark class on <body>), click-to-zoom images, a working price-tier filter for the table, auto-highlighting of the current nav link, and a live year in the footer.
+
+https://validator.w3.org/nu/#file
+
+https://jigsaw.w3.org/css-validator/validator
+
